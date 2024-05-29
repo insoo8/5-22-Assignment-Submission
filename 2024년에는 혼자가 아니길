@@ -1,0 +1,14 @@
+3.2024년에는 혼자가 아니길
+#include <stdio.h>
+int main() {
+    int x,y,w;
+    scanf("%d %d",&x,&y); // x,y값 입력
+    w=(2*x-y)*506; // w에(2*x-y)*506값 대입
+    if((w<0)||(x>y))
+        printf("-1"); 만약 w가 0보다 작고 x가 y보다 크다면 -1출력
+    else
+        printf("%d",w); 아니면 w출력
+    
+    return 0;
+}
+원점에서 부터 A,B,C,D의 거리를 변수로 두고 피타고라스정리를 이용해 풀었습니다.
