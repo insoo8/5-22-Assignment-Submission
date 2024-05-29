@@ -1,0 +1,18 @@
+4.과민성 대장 증후군
+#include <stdio.h>
+int main() {
+   long long int N,M,A,sum=0,n=0;
+    scanf("%lld %lld",&N ,&M); // N,M값 입력
+    for(int i=1;i<=N;i++){ // 반복문 N번 반복
+        scanf("%lld ",&A); // A값 입력
+        sum+=A; // sum을 A값만큼씩 증가
+        if(sum < 0)
+            sum = 0; // 만약 sum값이 음수가되면 0으로 만들기
+        if(sum>=M)
+            n+=1; // sum값이 M값보다 크거나 작다면 n값에 1씩 증가
+    }
+    printf("%lld",n); // n값 출력
+    return 0; 
+}
+N일동안 관찰하는것이기 때문에 N번만큼의 반복문을 돌렸고 스트레스 변화량 A값을 총 스트레스양을 나타낼 sum값에 더하고 만약 총 스트레스양이 복통을 겪게되는 스트레스양인 M값을 넘으면 n에 1씩 증가시켜
+며칠동안 복통을 겪는지 N을 출력해 나타낸다.
